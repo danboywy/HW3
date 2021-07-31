@@ -23,9 +23,7 @@ th{
   color: white;
   border: 1px solid white;
 }
-text {
-  background-color: blanchedalmond;
-}
+
 td{
   width: 2em;
   background-color: white;
@@ -34,10 +32,13 @@ td{
 
 body{
   background-color: blanchedalmond;
+  
 }
 table{
+  
   text-align: center;
-  margin: 50px auto;
+  margin: auto;
+  overflow: auto;
 }
 
 /*clean first row of first col*/

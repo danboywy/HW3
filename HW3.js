@@ -2,7 +2,7 @@
 //Haojie_zheng@student.uml.edu
 //07/31/2021
 function btn1_click(){
-  
+  //Check the input range with checkValidity
   //Check number1 between -50 to 50
   var inpObj1 = document.getElementById("fn");
   if (inpObj1.checkValidity() == false) {
@@ -12,7 +12,7 @@ function btn1_click(){
     document.getElementById("demo1").innerHTML = "GOOD";
   } 
 
-
+  //Check the input range with checkValidity
   //Check number2 between -50 to 50
   var inpObj2 = document.getElementById("en1");
   if (inpObj2.checkValidity() == false) {
@@ -22,7 +22,7 @@ function btn1_click(){
     document.getElementById("demo2").innerHTML = "GOOD";
   } 
 
-
+  //Check the input range with checkValidity
   //Check number3 between -50 to 50
   var inpObj3 = document.getElementById("sn");
   if (inpObj3.checkValidity() == false) {
@@ -32,7 +32,7 @@ function btn1_click(){
     document.getElementById("demo3").innerHTML = "GOOD";
   } 
 
-
+  //Check the input range with checkValidity
   //Check number4 between -50 to 50
   var inpObj4 = document.getElementById("en2");
   if (inpObj4.checkValidity() == false) {
@@ -48,14 +48,14 @@ function btn1_click(){
   var e1_num = parseInt(document.getElementById("en1").value);
   var e2_num = parseInt(document.getElementById("en2").value);
 
-  //Table
+  //Table info
   var body = document.getElementsByTagName('body')[0];
   var table = document.createElement('table');
   table.setAttribute('id', 'newtable');
   var tr = document.createElement('tr');
   var th = document.createElement('th');
 
-  //set first row of first col
+  //Blank input
   th.appendChild(document.createTextNode(''));
   tr.appendChild(th);
   table.appendChild(tr);
@@ -66,7 +66,7 @@ function btn1_click(){
   old_table.parentNode.removeChild(old_table);
 
   }
-  //Check min and max
+  //Check that min is less than max
   if (rows > e1_num){
     document.getElementById("demo5").innerHTML = "The minimum row cannot be greater than or equal to the maximum row";
     return false;
